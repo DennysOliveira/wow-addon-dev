@@ -1,0 +1,8 @@
+## Interface: 120001
+## Title: MyAddon
+## Notes: A minimal WoW addon template
+## Author: YourName
+## Version: 1.0.0
+## SavedVariables: MyAddonDB
+
+MyAddon.lua
