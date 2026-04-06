@@ -1,0 +1,7 @@
+{
+  "name": "wow-addon-dev",
+  "version": "1.0.0",
+  "description": "WoW addon development skill — Midnight 12.0+ with Secret Values, Lua API, widget framework, and addon scaffolding",
+  "homepage": "https://github.com/DennysOliveira/wow-addon-dev",
+  "skills": ["./skills/wow-addon-dev"]
+}

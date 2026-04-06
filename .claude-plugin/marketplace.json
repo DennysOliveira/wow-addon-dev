@@ -1,0 +1,20 @@
+{
+  "name": "wow-addon-dev",
+  "owner": {
+    "name": "Dennys Oliveira",
+    "url": "https://github.com/DennysOliveira"
+  },
+  "description": "World of Warcraft addon development skill for Claude Code — Midnight 12.0+ ready with Secret Values support",
+  "plugins": [
+    {
+      "name": "wow-addon-dev",
+      "source": "./plugins/wow-addon-dev",
+      "version": "1.0.0",
+      "description": "WoW addon development skill with Lua API reference, Secret Values guide, TOC scaffolding, and Midnight 12.0+ migration patterns",
+      "category": "development",
+      "keywords": ["wow", "world-of-warcraft", "addon", "lua", "midnight", "game-development"],
+      "strict": false,
+      "skills": ["./skills/wow-addon-dev"]
+    }
+  ]
+}
