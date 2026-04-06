@@ -95,7 +95,7 @@ Add the skill to your project's `CLAUDE.md`:
 | `addon-scaffolding.md` | Building a WoW addon from scratch — namespace pattern, SavedVariables initialization, slash command registration, event dispatcher, and a complete Hello World addon |
 | `lua-api-quick-ref.md` | 50 Lua API quick-reference entries in five categories with secret-value safety markers and function signatures |
 | `widget-framework.md` | Blizzard widget system — `CreateFrame()` types, script handlers, XML template syntax, Mixin, frame anchoring, secure frame restrictions, and a working unit frame |
-| `common-patterns.md` — | Ace3 lifecycle, LibStub embedding, LibDataBroker minimap buttons, LibSharedMedia, SavedVariables migration, addon messaging with instance restrictions, and performance patterns |
+| `common-patterns.md` | Ace3 lifecycle, LibStub embedding, LibDataBroker minimap buttons, LibSharedMedia, SavedVariables migration, addon messaging with instance restrictions, and performance patterns |
 
 ---
 

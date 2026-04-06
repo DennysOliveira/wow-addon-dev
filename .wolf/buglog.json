@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-04-06T11:15:58.064Z",
+      "error_message": "Incorrect value in code",
+      "file": "plugins/wow-addon-dev/templates/secret-aware-addon/README.md",
+      "root_cause": "Had `{ t, r, g, b }`",
+      "fix": "Changed to `{x, r, g, b, a}`",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "md"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-06T11:15:58.064Z"
+    }
+  ]
+}

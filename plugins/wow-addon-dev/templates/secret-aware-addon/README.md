@@ -42,9 +42,9 @@ To color a health bar by health percentage (green when full, red when empty) you
 ```lua
 -- Created once at init time
 local healthColorCurve = C_CurveUtil.CreateColorCurve({
-    { t = 0.0, r = 1.0, g = 0.0, b = 0.0 },  -- red at 0%
-    { t = 0.5, r = 1.0, g = 1.0, b = 0.0 },  -- yellow at 50%
-    { t = 1.0, r = 0.0, g = 1.0, b = 0.0 },  -- green at 100%
+    {0.0, 1.0, 0.0, 0.0, 1.0},  -- {x, r, g, b, a}  red at 0%
+    {0.5, 1.0, 1.0, 0.0, 1.0},  -- {x, r, g, b, a}  yellow at 50%
+    {1.0, 0.0, 1.0, 0.0, 1.0},  -- {x, r, g, b, a}  green at 100%
 })
 ```
 
@@ -52,8 +52,8 @@ To evaluate the curve at a secret health percentage, first map the raw health va
 
 ```lua
 local rangeCurve = C_CurveUtil.CreateCurve({
-    { t = 0,         value = 0.0 },
-    { t = maxHealth, value = 1.0 },
+    {0,         0.0},  -- {x, y}
+    {maxHealth, 1.0},  -- {x, y}
 })
 local healthPct = rangeCurve:Evaluate(currentHealth)  -- secret in, secret out
 local r, g, b = healthColorCurve:Evaluate(healthPct)  -- secret in, secret out
@@ -87,4 +87,4 @@ Enable **MyAddon** on the character select screen, then log in. A green health b
 - **Change bar position:** Edit the `<Anchor>` block in `UI.xml`. The `point` and `relativePoint` attributes accept any standard frame anchor (`TOPLEFT`, `BOTTOMRIGHT`, etc.).
 - **Change bar size:** Edit the `<AbsDimension>` inside the `<StatusBar>` `<Size>` block.
 - **Track a different unit:** In `Core.lua`, change `unit == "player"` to `unit == "target"` (or any valid unit token). Update the `UNIT_HEALTH` event registration to match — `UNIT_HEALTH` fires for any unit, the first argument is the unit token.
-- **Add more color stops:** Add extra `{ t, r, g, b }` entries to the `CreateColorCurve()` call in `SecretHandlers.lua`. The `t` value is the position along the curve from `0.0` to `1.0`.
+- **Add more color stops:** Add extra `{x, r, g, b, a}` entries to the `CreateColorCurve()` call in `SecretHandlers.lua`. The `x` value is the position along the curve from `0.0` to `1.0`.
