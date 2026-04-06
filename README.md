@@ -13,7 +13,7 @@ Claude Code skill plugin for World of Warcraft addon development — Midnight 12
 
 ```
 /plugin marketplace add DennysOliveira/wow-addon-dev
-/plugin enable wow-addon-dev
+/plugin install wow-addon-dev@wow-addon-dev
 ```
 
 ---
